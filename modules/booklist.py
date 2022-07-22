@@ -1,4 +1,4 @@
-from book import Book
+from modules.book import Book
 
 book1 = Book("Think Like A Monk", "Jay Shetty", "Self development")
 book2 = Book("Milk and Honey", "Rupi Kaur", "Poetry")
