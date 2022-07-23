@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Preet's Reads</title>
 </head>
 <body>
     <header>
-        Preet's Reads
+       <h1> Preet's Reads</h1>
+
         <nav>
             <ul>
                 <li>
                     <a href="/books">Homepage</a>
+                    <a href="/books/addanewbook"> Add A New Book</a>
+                    <a href="books/removeabook">Remove A Book</a>
                 </li>
             </ul>
 
         </nav>
 
     </header>
+<hr>
+    {% block content%}
+
+    {% endblock %}
+    <hr>
     <footer>
         CopyRight Preet's Reads
     </footer>

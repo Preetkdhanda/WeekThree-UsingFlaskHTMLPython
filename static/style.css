@@ -1,0 +1,62 @@
+header {
+background-color: white;
+display: flex;
+/* flex-direction: column ; */
+flex-direction: flex-end;
+margin: 0;
+border: none;
+}
+
+header > h1 {
+
+    color: pink;
+    text-align: center;
+    font-family: cursive; }
+
+body  {
+    background-color: pink ;
+    color: white;
+ }
+
+
+header > nav > ul > li {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    
+} 
+
+section{
+
+    text-align: center;
+}
+p {
+
+    text-align: center;
+}
+
+body > h1 {
+    text-align: center;
+}
+
+h3{
+    background-color: white;
+    color: pink;
+    text-align: center;
+}
+
+h2{
+    background-color: white;
+    color: pink ;
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+footer{
+    font-size: 30px;
+    text-align: center;
+    
+}

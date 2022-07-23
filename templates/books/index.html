@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to Preet's Reads!</h1>
+<section> This page is dedicating to Preet's must reads!</section>
+<section>It covers all the interesting books Preet has read and enjoyed
+    in her life! 
+    <p> One of her favourite books is by Jay Shetty called Think Like A Monk.
+    </p>
+    <p>The book is describes as:</p>
+    <p><b><i>Jay Shetty, social media superstar and host of the #1 podcast On Purpose, distills the timeless wisdom he learned as a monk into practical steps anyone can take every day to live a less anxious, more meaningful life.</b></i></p>
+
+    <h2> You can see all her favourite books here:</h2>
+    <div>
+        {% for book in all_books %}
+    <h3><b> Title : {{book.title}} </b></h3>
+    <h4>  Author : {{book.author}}</h4>
+    <h4>  Genre : {{book.genre}}</h4>
+        </div>
+        
+       
+    
+</section>
+{% endfor %}
+
+{% endblock %}
